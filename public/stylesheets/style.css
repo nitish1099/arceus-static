@@ -1,0 +1,275 @@
+:root {
+  --darkgrey: #0d0f16;
+  --lightgray: #12141c;
+  --blue: #4890F9;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Merriweather', serif;
+ color: var(--white)
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;;
+  background: var(--darkgrey);
+}
+
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.nav-bar__logo {
+  width: 200px;
+}
+
+.nav-bar__menu > li {
+  display: inline;
+  margin-left: 30px;
+}
+
+.nav-bar__menu > li > a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* SHIFT */
+.nav-bar__menu li a:after,
+.nav-bar__menu li a:before {
+  transition: all .5s;
+}
+
+.nav-bar__menu li a {
+  position:relative;
+  z-index: 1;
+}
+.nav-bar__menu li a:hover {
+  color: var(--white);
+}
+.nav-bar__menu li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  border-radius: 20px;
+  padding: 10px;
+  content: '.';
+  color: transparent;
+  background: var(--blue);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.nav-bar__menu li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+.slide {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slide__intro, .slide__what-we-do {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slide.slide__intro {
+  justify-content: flex-end;
+}
+
+.slide__caption {
+  position: absolute;
+  width: 40%;
+  flex: 1;
+  align-self: center;
+  left: 30px;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.slide__caption p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact-us {
+  padding: 10px 30px;
+  font-size: 20px;
+  background: none;
+  border: 1px solid var(--blue);
+  border-radius: 40px;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.contact-us:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.slide__image {
+  flex: 0.5;
+  background-image: url('../images/suit.jpeg');
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.slide__what-we-do {
+  justify-content: flex-start;
+}
+
+.slide__what-we-do .slide__caption {
+  left: auto;
+  right: 30px;
+  text-align: right;
+}
+
+.slide__heading {
+  position:relative;
+  height: 60px;
+  margin-top: 100px;
+  padding-bottom:10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.slide__heading:before {
+  content:"";
+  position:absolute;
+  top:110%;
+  left:45%;
+  width:10%;
+  margin-top: 20px;
+  border:2px solid var(--blue);
+  border-radius:4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.tile {
+  width: calc((100% - 100px)/3);
+  height: 625px;
+  background-color: var(--lightgray);
+  margin-bottom: 50px;
+}
+
+.tile:hover {
+  border-bottom: 2px solid var(--blue);
+}
+
+.tile:hover > .tile__thumbnail > img {
+  transform: scale(1.1);
+}
+
+.tile__thumbnail {
+  height: 250px;
+  overflow: hidden;
+}
+
+.tile__thumbnail img {
+  width: 100%;
+  transition: transform 1s;
+}
+
+.tile__content {
+  padding: 20px;
+  color: var(--white)
+}
+
+.tile__content > .content__heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--blue);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.tile__content > .content__description {
+  font-size: 16px;
+}
+
+.tile.tile--recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  height: auto;
+  border-bottom: 0 !important;
+  text-align: center;
+}
+
+.tile .tile__icon {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 75px;
+  background-color: var(--lightgray);
+  transition: background-color 1s ease;
+}
+
+.tile:hover .tile__icon {
+  background-color: var(--blue);
+}
+
+.tile__icon img {
+  width: 75px;
+  height: 75px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lightgray);
+  padding: 30px;
+}
+
+footer p {
+  color: var(--white);
+  margin: 0px;
+  padding: 5px;
+}
+
+footer .contact-us {
+  height: 50px;
+  background: var(--blue);
+  color: var(--white);
+}
