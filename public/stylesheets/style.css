@@ -34,7 +34,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 20px 50px;
 }
 
 .nav-bar__logo {
@@ -43,7 +43,7 @@ header {
 
 .nav-bar__menu > li {
   display: inline;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .nav-bar__menu > li > a {
@@ -109,7 +109,7 @@ header {
   width: 40%;
   flex: 1;
   align-self: center;
-  left: 30px;
+  left: 50px;
   font-size: 40px;
   color: var(--white);
 }
@@ -147,7 +147,7 @@ header {
 
 .slide__what-we-do .slide__caption {
   left: auto;
-  right: 30px;
+  right: 50px;
   text-align: right;
 }
 
@@ -174,9 +174,10 @@ header {
 
 .grid {
   display: flex;
+  width: 1400px;
   align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 100px 0px;
   padding: 50px;
   flex-wrap: wrap;
 }
@@ -194,6 +195,10 @@ header {
 
 .tile:hover > .tile__thumbnail > img {
   transform: scale(1.1);
+}
+
+.tile:hover > .tile__content > .content__heading {
+  color: var(--blue)
 }
 
 .tile__thumbnail {
@@ -214,7 +219,7 @@ header {
 .tile__content > .content__heading {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: var(--blue);
+  color: var(--white);
   font-size: 26px;
   font-weight: bold;
 }
