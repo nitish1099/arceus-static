@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%include header.ejs%>
+    <div class="banner banner-case-studies"></div>
+    <div class="listing">
+      <h3>Case Studies</h3>
+      <% Object.keys(case_studies).forEach(function(case_study, index) { %>
+        <div class="list-item">
+
+          <div class="content">
+            <h4><%= case_studies[index].title%></h4>
+            <p><%= case_studies[index].excerpt%></p>
+            <a href="case-studies/<%=index%>">
+              <button class="contact-us">Know More</button>
+            </a>
+          </div>
+          <div class="thumbnail">
+            <img src='/images/<%= case_studies[index].thumbnail %>.jpeg'>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </body>
+  <%include footer.ejs%>
+</html>

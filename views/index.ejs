@@ -2,192 +2,157 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,800|Muli:300" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&family=PT+Sans+Narrow:wght@400;700&family=Raleway:ital@display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <%include header.ejs%>
     <div class="slide slide__intro">
+      <div id="particles-js"></div>
       <div class="slide__caption">
         <h3>Who We Are?</h3>
-        <p>A select group of veterans from the elite intelligence units that specialises in tailored
-        solutions to complex business and litigation challenges</p>
-        <button class="contact-us">Get In Touch</button>
+        <p>Arceus Consulting is a leading cyber consultancy specialising in cyber security, investigations, political risks, national security issues and disputes.</p>
       </div>
-      <div class="slide__image"></div>
-    </div>
-    <div class="slide slide__what-we-do">
-      <div class="slide__caption">
-        <h3>What We Do?</h3>
-        <p>Tailor-made solutions based on high-quality intelligence cutting- edge technology, unique expertise and out-of-the-box thinking.</p>
+      <div class="slide__image">
+        <div class="slide__caption">
+          <h3>What We Do?</h3>
+          <p>We provide custom solutions using cyber technology and our analytical expertise to anticipate and mitigate risks for corporates, financial institutions, government institutions, law firms, and high net worth individuals and family offices.</p>
+        </div>
       </div>
-      <div class="slide__image"></div>
     </div>
-    <div class="slide">
+    <div class="js-jarallax">
+      <img class="jarallax-img" src="../images/skyscraper.jpeg" alt="">
+    </div>
+    <div class="slide slide--gray">
       <h2 class="slide__heading">What Makes Us Unique</h2>
       <div class="grid">
         <div class="tile">
-          <div class="tile__thumbnail">
-            <img src="../images/tile-1.jpeg">
-          </div>
           <div class="tile__content">
-            <h4 class="content__heading">Cutting-Edge Analytical Skills</h4>
+            <h4 class="content__heading">Technology Driven</h4>
             <p class="content__description">
-              Cutting-edge analytical and research skills are at the heart of every solid intelligence project.
-              Highly experienced and trained in elite military and governmental intelligence units,
-              the Arceus team uses creative and inventive thinking to connect the dots.
+              Arceus Consulting is a technology driven organization. With our innovative tools and methodologies, we gather critical information and intelligence for our clients and trace potential sources of interest.
             </p>
           </div>
         </div>
         <div class="tile">
-          <div class="tile__thumbnail">
-            <img src="../images/tile-2.jpeg">
-          </div>
           <div class="tile__content">
-            <h4 class="content__heading">Harvesting In The Cyber World</h4>
+            <h4 class="content__heading">Cyber Expertise</h4>
             <p class="content__description">
-              Arceus has developed innovative tools and methodologies to handle massive amounts of data.
-              We unearth useful information for our clients and map all potential sources of interest by
-              trawling the deep web and harvesting information from typically inaccessible areas of the Internet such as the Dark Net.
+              Our cyber consultants have years of global experience working on a wide range of critical and challenging cases. With our cyber prowess, we can gather intelligence from the deep web, counter and contain real world cyber-attacks and provide complete personalised security solutions.
             </p>
           </div>
         </div>
         <div class="tile">
-          <div class="tile__thumbnail">
-            <img src="../images/tile-3.jpeg">
-          </div>
           <div class="tile__content">
-            <h4 class="content__heading">Languages And Cultures</h4>
+            <h4 class="content__heading">Government Authorised</h4>
             <p class="content__description">
-              With its multi-lingual background, including more than 30 native speakers of different languages,
-              and a unique understanding of many local cultures, the team is uniquely skilled to operate in Europe, the Middle East,
-              the Former Soviet Union, Latin America and many other regions, while handling various cultural challenges.
-              Arceus has already operated successfully in over 40 countries.
+              Arceus Consulting is an Indian Government approved organization. Our testimonies and reports are valid and can be submitted as evidence in the court of law in India.
             </p>
           </div>
         </div>
         <div class="tile">
-          <div class="tile__thumbnail">
-            <img src="../images/tile-4.jpeg">
-          </div>
           <div class="tile__content">
-            <h4 class="content__heading">Extensive Database Access</h4>
+            <h4 class="content__heading">Extensive Database</h4>
             <p class="content__description">
-              We have unique experience accessing and analysing information on various platforms,
-              including more than 240 limited-access financial, commercial, regulatory, legal and technical
-              databases, gaining lawful access to new resources in accordance with our clients' needs.
+              We can gather accurate and timely intelligence through our proprietary databases and our expertise in accessing the information on limited-access global databases of financial, regulatory, commercial, technical, and legal databases.
             </p>
           </div>
         </div>
         <div class="tile">
-          <div class="tile__thumbnail">
-            <img src="../images/tile-5.jpeg">
-          </div>
           <div class="tile__content">
-            <h4 class="content__heading">Pro-Active Approach</h4>
+            <h4 class="content__heading">Social Engineering Expertise</h4>
             <p class="content__description">
-              We overcome limited-access sources by taking a can-do, dynamic approach.
-              We have developed several unique methods, especially in the social engineering field,
-              that allow us to move freely in and to extract valuable information from limited access sources,
-              both in virtual and physical environments.
+              Combining our knowledge of real-world intelligence, social media and digital expertise, we are experts in leveraging social engineering to serve a wide range of our client needs for extraction of human intelligence.
             </p>
           </div>
         </div>
         <div class="tile">
-          <div class="tile__thumbnail">
-            <img src="../images/tile-6.jpeg">
-          </div>
           <div class="tile__content">
-            <h4 class="content__heading">Ethical Conduct</h4>
+            <h4 class="content__heading">Analytics</h4>
             <p class="content__description">
-              We only use human intelligence to discover the truth and always act lawfully in each
-              jurisdiction in which we operate. We do not undertake any projects involving violent crime of any kind,
-              including sexual harassment. We never use intimidation, blackmail or hacking to obtain information,
-              and we only ever record conversations that we are a party to.
-              We do not put words into people’s mouths and our recordings are never edited to change the meaning of a conversation.
-              Full, unedited transcripts of our recordings are always provided to the court.
+              We leverage the power of analytics, in-depth research, and creative thinking to provide services for a wide range of client needs. Our team of consultants actively uses data analytics to provide the highest quality service to our clients, from due diligence to forensics.
             </p>
           </div>
         </div>
       </div>
+      <img src="../images/wave.png" class="wave-background">
     </div>
-    <div class="slide">
-      <h2 class="slide__heading">Our Recipe For Success</h2>
+    <div class="slide slide--black">
+      <h2 class="slide__heading">Success Factors</h2>
       <div class="grid">
         <div class="tile tile--recipe">
           <div class="tile__icon">
-            <img src="../images/global.svg">
+            <img src="../images/icon-1.png">
           </div>
           <div class="tile__content">
-            <h4 class="content__heading">Resourcefulness</h4>
+            <h4 class="content__heading">Custom Solutions</h4>
             <p class="content__description">
-              We commit ourselves to devising "out of the box" solutions.
-              We believe that any goal can be reached through creativity and an open mind.
+              Agile and Adaptable expertise to suit client needs.
             </p>
           </div>
         </div>
         <div class="tile tile--recipe">
           <div class="tile__icon">
-            <img src="../images/global.svg">
+            <img src="../images/icon-2.png">
           </div>
           <div class="tile__content">
-            <h4 class="content__heading">Enthusiasm</h4>
+            <h4 class="content__heading">Timely and Effecient</h4>
             <p class="content__description">
-              We strive to create added-value for our clients.
-              We never stop thinking about what else can be done to further promote our clients' interests.
+              We determine facts quickly and accurately.
             </p>
           </div>
         </div>
         <div class="tile tile--recipe">
           <div class="tile__icon">
-            <img src="../images/global.svg">
+            <img src="../images/icon-3.png">
           </div>
           <div class="tile__content">
-            <h4 class="content__heading">Confidentiality</h4>
+            <h4 class="content__heading">Value</h4>
             <p class="content__description">
-              We see ourselves as our clients' confidants, and staunchly believe
-              that we can achieve our goals only through complete co-operation with, and the trust of, our clients.
+              We provide credible and implementable solutions.
             </p>
           </div>
         </div>
         <div class="tile tile--recipe">
           <div class="tile__icon">
-            <img src="../images/global.svg">
+            <img src="../images/icon-1.png">
           </div>
           <div class="tile__content">
-            <h4 class="content__heading">Professionalism</h4>
+            <h4 class="content__heading">Crisis Experience</h4>
             <p class="content__description">
-              Professionalism is the keystone of our success.
-              We select the best experts in each field to ensure that the service we provide is second to none.
+              We help you to navigate and effectively manage crisis based on our past experiences.
             </p>
           </div>
         </div>
         <div class="tile tile--recipe">
           <div class="tile__icon">
-            <img src="../images/global.svg">
+            <img src="../images/icon-2.png">
           </div>
           <div class="tile__content">
-            <h4 class="content__heading">Integrity</h4>
+            <h4 class="content__heading">Trust</h4>
             <p class="content__description">
-              We maintain total transparency with our clients.
-              We always provide details of our work and explain our actions,
-              and we always operate in full coordination with our clients.
+              We help you to return to normalcy and safeguard you from future risks.
             </p>
           </div>
         </div>
         <div class="tile tile--recipe">
           <div class="tile__icon">
-            <img src="../images/global.svg">
+            <img src="../images/icon-3.png">
           </div>
           <div class="tile__content">
-            <h4 class="content__heading">Efficiency</h4>
+            <h4 class="content__heading">Innovation</h4>
             <p class="content__description">
-              We work swiftly and efficiently to ensure timely product delivery in the format most appropriate for the client.
+              We use the latest technologies in cyber and digital to stay a step ahead.
             </p>
           </div>
         </div>
       </div>
+      <img src="../images/globe.jpeg" class="globe">
     </div>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../javascripts/index.js"></script>
   </body>
   <%include footer.ejs%>
 </html>

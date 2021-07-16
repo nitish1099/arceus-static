@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%include header.ejs%>
+    <div class="banner banner-case-studies"></div>
+    <div class="listing case-study">
+      <h3><%=case_study.title%></h3>
+      <div class="thumbnail" style="background-image: url('/images/<%= case_study.thumbnail %>.jpeg')"></div>
+      <div class="section-content section-content--center">
+        <p class="para-title">Scenario</p>
+        <% case_study.scenarios.forEach(function(scenario, index) { %>
+          <p class="para-block"><%=scenario%></p>
+        <% }); %>
+        <p class="para-title">Key Takeaways</p>
+        <% case_study.takeaways.forEach(function(takeaway, index) { %>
+          <p class="para-block"><%=takeaway%></p>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+  <%include footer.ejs%>
+</html>
