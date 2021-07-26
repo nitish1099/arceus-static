@@ -17,9 +17,23 @@
         <% case_study.scenarios.forEach(function(scenario, index) { %>
           <p class="para-block"><%=scenario%></p>
         <% }); %>
+        <p class="para-title">Tactic And Actions</p>
+        <% case_study.tactics.forEach(function(tactic, index) { %>
+          <p class="para-block"><%=tactic%></p>
+        <% }); %>
+        <% if (case_study.results) { %>
+          <p class="para-title">Case Results</p>
+          <% case_study.results.forEach(function(result, index) { %>
+            <p class="para-block"><%=result%></p>
+          <% }); %>
+        <% } %>
         <p class="para-title">Key Takeaways</p>
         <% case_study.takeaways.forEach(function(takeaway, index) { %>
           <p class="para-block"><%=takeaway%></p>
+        <% }); %>
+        <p class="para-title">Arceus Advantage</p>
+        <% case_study.advantages.forEach(function(advantage, index) { %>
+          <p class="para-block"><%=advantage%></p>
         <% }); %>
       </div>
     </div>

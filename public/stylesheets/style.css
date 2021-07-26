@@ -221,7 +221,7 @@ header {
   height: 60px;
   margin: 0px;
   padding-bottom:10px;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: normal;
   text-align: center;
 }
@@ -240,6 +240,13 @@ header {
 
 .js-jarallax {
   height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-jarallax .slide__heading {
+  font-size: 48px;
 }
 
 .grid {
@@ -316,13 +323,11 @@ header {
 }
 
 .tile__icon {
-  height: 30px;
-  line-height: 30px;
+  width: 50px;
 }
 
 .tile__icon img {
-  width: 25px;
-  height: 25px;
+  width: 50px;
 }
 
 .wave-background {
@@ -347,6 +352,14 @@ header {
   width: 1000px;
   margin: 0;
   padding-left: 50px;
+  padding-bottom: 100px;
+}
+
+.slide--black .slide__heading {
+  text-align: left;
+  padding-left: 140px;
+  font-size: 48px;
+  display: inline-block;
 }
 
 .tile--recipe .content__heading {
@@ -474,6 +487,10 @@ li > .para-title {
 
 li > .para-block {
   margin-top: 0;
+}
+
+.para-block.bold {
+  font-weight: bold;
 }
 
 .image-break {
