@@ -2,8 +2,9 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&family=PT+Sans+Narrow:wght@400;700&family=Raleway:ital@display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&family=PT+Sans+Narrow:wght@400;700&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -16,8 +17,14 @@
       </div>
       <div class="slide__image">
         <div class="slide__caption">
-          <h3>What We Do?</h3>
-          <p>We provide custom solutions using cyber technology and our analytical expertise to anticipate and mitigate risks for corporates, financial institutions, government institutions, law firms, and high net worth individuals and family offices.</p>
+          <div>
+            <h3>Who We Are?</h3>
+            <p>Arceus Consulting is a cyber technology powered investigation firm. We specialize in solving complex issues connected to national security, political events, corporate processes and personal.</p>
+          </div>
+          <div>
+            <h3>What We Do?</h3>
+            <p>We provide custom solutions using cyber technology and our analytical expertise to anticipate and mitigate risks for corporates, financial institutions, government institutions, law firms, and high net worth individuals and family offices.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -150,9 +157,6 @@
       </div>
       <img src="../images/globe.jpeg" class="globe">
     </div>
-    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="../javascripts/index.js"></script>
   </body>
   <%include footer.ejs%>
 </html>
